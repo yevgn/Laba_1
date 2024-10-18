@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Laba_1</string>
+    <string name="input_data_text">Входные данные</string>
+    <string name="random_words">
+            Насыпь Вода Окрест Сыр Польша Зима Пришвартоваться Пропись Седина Кран Мост Дуб Мама Рома Откинуть
+    </string>
+    <string name="input_hint">Длина слова</string>
+    <string name="button_text">Получить результат</string>
+</resources>
