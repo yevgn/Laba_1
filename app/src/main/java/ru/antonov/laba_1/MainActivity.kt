@@ -25,25 +25,24 @@ class MainActivity : AppCompatActivity() {
         val edWordLen = findViewById<EditText>(R.id.etWordLen)
         val tvOutputData = findViewById<TextView>(R.id.tvOutputData)
 
-        var len : Int
-
         btnGetResult.setOnClickListener {
-            if(tvInputData.text.isNotEmpty()){
-                var lenStr = edWordLen.text.toString()
 
-                len = if(lenStr.isEmpty() || lenStr.toInt() < 0 ) 0
+            if(tvInputData.text.isNotEmpty()){
+
+                val lenStr = edWordLen.text.toString()
+
+                val lenInt = if(lenStr.isEmpty() || lenStr.toInt() < 0 ) 0
                         else edWordLen.text.toString().toInt()
 
                 val textEditor = MyTextEditor()
                 val editedText =
-                    textEditor.deleteWords(tvInputData.text.split(" "), len)
+                    textEditor.deleteWords(tvInputData.text.split(" "), lenInt)
 
-                var outputToPrint = ""
-                for(str in editedText)
-                    outputToPrint += "$str "
+                val outputToPrint = editedText.joinToString(" ")
 
                 tvOutputData.text = outputToPrint
             }
+
         }
 
     }
