@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,10 +21,19 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+
         val btnGetResult = findViewById<Button>(R.id.btnGetResult)
+        // val btnGetResult : Button = findViewById(R.id.btnGetResult)
+        // val btnGetResult = findViewById(R.id.btnGetResult) as Button
+
         val tvInputData = findViewById<TextView>(R.id.tvInputData)
         val edWordLen = findViewById<EditText>(R.id.etWordLen)
         val tvOutputData = findViewById<TextView>(R.id.tvOutputData)
+
+        // Получение массива строк из res -> values -> string-arrays.xml и установка tvInputData
+        tvInputData.text = resources
+            .getStringArray(R.array.random_words)
+            .joinToString(" ")
 
         btnGetResult.setOnClickListener {
 
@@ -44,7 +54,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-
     }
 }
 

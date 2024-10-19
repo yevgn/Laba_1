@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="random_words">
+        <item>Насыпь</item>
+        <item>Вода</item>
+        <item>Окрест</item>
+        <item>Сыр</item>
+        <item>Польша</item>
+        <item>Зима</item>
+        <item>Пришвартоваться</item>
+        <item>Пропись</item>
+        <item>Седина</item>
+        <item>Кран</item>
+        <item>Мост</item>
+        <item>Дуб</item>
+        <item>Мама</item>
+        <item>Рома</item>
+        <item>Откинуть</item>
+    </string-array>
+
+</resources>
