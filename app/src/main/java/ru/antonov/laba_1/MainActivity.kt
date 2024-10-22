@@ -21,7 +21,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        init()
+    }
 
+    private fun init(){
         val btnGetResult = findViewById<Button>(R.id.btnGetResult)
         // val btnGetResult : Button = findViewById(R.id.btnGetResult)
         // val btnGetResult = findViewById(R.id.btnGetResult) as Button
@@ -40,9 +43,7 @@ class MainActivity : AppCompatActivity() {
             if(tvInputData.text.isNotEmpty()){
 
                 val lenStr = edWordLen.text.toString()
-
-                val lenInt = if(lenStr.isEmpty() || lenStr.toInt() < 0 ) 0
-                        else edWordLen.text.toString().toInt()
+                val lenInt = if(lenStr.isEmpty() || lenStr.toInt() < 0 ) 0 else lenStr.toInt()
 
                 val textEditor = MyTextEditor()
                 val editedText =
