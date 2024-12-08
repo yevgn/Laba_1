@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "ru.antonov.laba_1"
+    namespace = "ru.aleksandra.laba_1"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ru.antonov.laba_1"
+        applicationId = "ru.aleksandra.laba_1"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

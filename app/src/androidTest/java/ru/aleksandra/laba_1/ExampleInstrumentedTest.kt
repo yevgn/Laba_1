@@ -1,4 +1,4 @@
-package ru.antonov.laba_1
+package ru.aleksandra.laba_1
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package ru.antonov.laba_1
+package ru.aleksandra.laba_1
 
 import org.junit.Test
 
